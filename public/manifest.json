@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "OIC DevOps Chrome extension",
+  "description": "OIC DevOps Chrome extension for exporting integrations from Oracle Integration Cloud, and upload them to GitHub.",
+  "version": "1.1",
+  "action": {
+    "default_icon": {
+      "16": "/icons/GitHub-Mark-120px-plus.png"
+    },
+    "default_title": "OIC DevOps Chrome Extension.",
+    "default_popup": "index.html"
+  },
+  "permissions": ["tabs"]
+}
