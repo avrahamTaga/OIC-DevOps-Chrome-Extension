@@ -37,7 +37,7 @@ function Form() {
               required
             />
             <br />
-            <label>Branch name</label>
+            <label>Branch Name</label>
             <br />
             <input
               type="text"
@@ -47,7 +47,7 @@ function Form() {
               required
             />
             <br />
-            <label>Git User</label>
+            <label>GitHub User</label>
             <br />
             <input
               type="text"
@@ -58,7 +58,7 @@ function Form() {
             />
 
             <br />
-            <label>Repo name</label>
+            <label>Repo Name</label>
             <br />
             <input
               type="text"
@@ -69,7 +69,7 @@ function Form() {
             />
             <br />
             <br />
-            <input type="submit" value="Sava Configurations" />
+            <input type="submit" value="Save Configurations" />
           </form>
         </div>
       ) : (

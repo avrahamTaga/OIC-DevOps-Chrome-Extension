@@ -34,7 +34,7 @@ function FileUpload() {
       let integrationFileName = `${integrationID}.iar`;
       let GithubURL = `https://api.github.com/repos/${username}/${reponame}/contents/${integrationFileName}`;
 
-      if (integrationID !== "null|null") {
+      if (integrationID != "null|null" || "") {
         let response = await fetch(GithubURL, {
           method: "GET",
           headers: {
