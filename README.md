@@ -1,3 +1,4 @@
+Chrome Extension for Exporting OIC Integrations and Uploading to GitHub.
 
 This Chrome extension allows users to export integrations from Oracle Integration Cloud (OIC) and upload them to a GitHub repository. 
 The extension makes API calls to IDCS (Oracle Identity Cloud Service) and OIC (Oracle Integration Cloud) to authenticate and retrieve the Integration file, and then uses the GitHub API to upload the integration file.
