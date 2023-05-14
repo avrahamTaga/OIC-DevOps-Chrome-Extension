@@ -9,14 +9,15 @@ GitHub integration: After exporting the integration, the extension makes an API 
 
 Prerequisites:
 Before using the extension, ensure you have the following:
-Google Chrome browser installed on your computer. An active OIC instance with integrations that you want to export. Access to an Oracle IDCS account with the necessary permissions to authenticate and retrieve data from OIC. A GitHub account and a repository where you want to upload the integration files. 
+Google Chrome browser installed on your computer. An active OIC instance with integrations that you want to export. Access to an Oracle IDCS account with the necessary permissions to authenticate and retrieve data from OIC. A GitHub account and a repository where you want to upload the integration files.
+Node.js with npm(Node Package Manager) to run the different command.
 
 Installation:
 To install the Chrome extension, follow these steps: Clone/Download the extension package from the GitHub repository.
 Extract the downloaded package to a local directory on your computer. 
 Run the commend `npm Install` in the root directory this command will install all the Dependencies and will create a folder named "node_modules".
 You will need also to create a .env file to store all your IDCS/OIC sensitive data which used in the code.
-Your .env file souled look like this.
+Your .env file should look like this.
 
  
 
@@ -29,25 +30,26 @@ Your .env file souled look like this.
 
 
 To load the extensions you will need to run this command `npm run build`, this command will create a folder named "build" this folder will upload to Chrome Extensions.
-Your folders structure souled look like this:
+Your folders structure should look like this:
  
  
 Open Google Chrome and navigate to chrome://extensions. Enable the "Developer mode" toggle switch in the top right corner of the page. Click the "Load unpacked" button and select the build directory. The extension should now be installed and visible in your Chrome browser.
 
 Configuration:
 Before using the extension, you need to configure it with the necessary information. Follow these steps to configure the extension: Click on the extension icon in the Chrome toolbar to open the extension popup. 
-1-Token, your GitHub token.
+1-Token, your GitHub token.	
 2-Branch name, your GitHub branch.
 3-Git user, your GitHub username.
 4-Repo name, your GitHub repo name.
- 
+
+
 
 Limitations:
 The extension currently supports exporting and uploading one integration at a time. The exported integration file will be in a specific format compatible with OIC. Make sure you have the necessary tools and knowledge to work with OIC integration files.
 
 Troubleshooting: 
 If you encounter any issues while using the extension, consider the following troubleshooting steps: Ensure that you have provided the correct configuration details in the extension settings. Check your internet connection to ensure that you can access OIC, IDCS, and GitHub. Verify that the selected integration in OIC is valid and does not have any errors or dependencies that may affect the export process (Only an activated integration can be export).
-Make sure you have the necessary permissions and access rights in OIC, IDCS, and GitHub to perform the required actions. Check the extension popup inspect for any error messages or status updates that may provide insights into the issue.
+Make sure you have the necessary permissions and access rights in OIC, IDCS, and GitHub to perform the required actions. Check the extension popup inspect for any error log messages or status updates that may provide insights into the issue.
 If the problem persists, try restarting the extension. If none of the above steps resolve the problem, consider reaching out to the extension developer or referring to the documentation for further assistance. 
 
 Security Considerations: 
